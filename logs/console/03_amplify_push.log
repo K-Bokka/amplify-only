@@ -1,0 +1,122 @@
+TMPC-015:amplify-only a-yamamoto$ amplify push
+
+Current Environment: staging
+
+| Category | Resource name | Operation | Provider plugin   |
+| -------- | ------------- | --------- | ----------------- |
+| Api      | amplifytest   | Create    | awscloudformation |
+? Are you sure you want to continue? Yes
+
+The following types do not have '@auth' enabled. Consider using @auth with @model
+	 - Todo
+Learn more about @auth here: https://aws-amplify.github.io/docs/cli-toolchain/graphql#auth
+
+
+GraphQL schema compiled successfully.
+
+Edit your schema at /Users/a-yamamoto/git/amplify/amplify-only/amplify/backend/api/amplifytest/schema.graphql or place .graphql files in a directory at /Users/a-yamamoto/git/amplify/amplify-only/amplify/backend/api/amplifytest/schema
+? Do you want to generate code for your newly created GraphQL API Yes
+? Choose the code generation language target typescript
+? Enter the file name pattern of graphql queries, mutations and subscriptions src/graphql/**/*.ts
+? Do you want to generate/update all possible GraphQL operations - queries, mutations and subscriptions Yes
+? Enter maximum statement depth [increase from default if your schema is deeply nested] 2
+? Enter the file name for the generated code src/API.ts
+⠴ Updating resources in the cloud. This may take a few minutes...
+
+UPDATE_IN_PROGRESS amplify-amplify-only-staging-141723 AWS::CloudFormation::Stack Tue Oct 29 2019 14:32:24 GMT+0900 (GMT+09:00) User Initiated
+CREATE_IN_PROGRESS apiamplifytest                      AWS::CloudFormation::Stack Tue Oct 29 2019 14:32:27 GMT+0900 (GMT+09:00)
+⠦ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS apiamplifytest AWS::CloudFormation::Stack Tue Oct 29 2019 14:32:29 GMT+0900 (GMT+09:00) Resource creation Initiated
+⠧ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS amplify-amplify-only-staging-141723-apiamplifytest-BGSOYEOED8L4 AWS::CloudFormation::Stack Tue Oct 29 2019 14:32:29 GMT+0900 (GMT+09:00) User Initiated
+⠦ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS GraphQLAPI AWS::AppSync::GraphQLApi Tue Oct 29 2019 14:32:33 GMT+0900 (GMT+09:00)
+⠦ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS GraphQLAPI    AWS::AppSync::GraphQLApi    Tue Oct 29 2019 14:32:36 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_COMPLETE    GraphQLAPI    AWS::AppSync::GraphQLApi    Tue Oct 29 2019 14:32:36 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS GraphQLSchema AWS::AppSync::GraphQLSchema Tue Oct 29 2019 14:32:38 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS GraphQLAPIKey AWS::AppSync::ApiKey        Tue Oct 29 2019 14:32:38 GMT+0900 (GMT+09:00)
+⠧ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS GraphQLAPIKey AWS::AppSync::ApiKey        Tue Oct 29 2019 14:32:40 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_IN_PROGRESS GraphQLSchema AWS::AppSync::GraphQLSchema Tue Oct 29 2019 14:32:40 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_COMPLETE    GraphQLAPIKey AWS::AppSync::ApiKey        Tue Oct 29 2019 14:32:40 GMT+0900 (GMT+09:00)
+CREATE_COMPLETE    GraphQLSchema AWS::AppSync::GraphQLSchema Tue Oct 29 2019 14:32:41 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS Todo          AWS::CloudFormation::Stack  Tue Oct 29 2019 14:32:44 GMT+0900 (GMT+09:00)
+⠧ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS Todo AWS::CloudFormation::Stack Tue Oct 29 2019 14:32:45 GMT+0900 (GMT+09:00) Resource creation Initiated
+⠏ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS amplify-amplify-only-staging-141723-apiamplifytest-BGSOYEOED8L4-Todo-WUQYDBFUJ6MK AWS::CloudFormation::Stack Tue Oct 29 2019 14:32:45 GMT+0900 (GMT+09:00) User Initiated
+⠋ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS TodoTable   AWS::DynamoDB::Table Tue Oct 29 2019 14:32:50 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS TodoIAMRole AWS::IAM::Role       Tue Oct 29 2019 14:32:51 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS TodoTable   AWS::DynamoDB::Table Tue Oct 29 2019 14:32:51 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_IN_PROGRESS TodoIAMRole AWS::IAM::Role       Tue Oct 29 2019 14:32:52 GMT+0900 (GMT+09:00) Resource creation Initiated
+⠼ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_COMPLETE TodoIAMRole AWS::IAM::Role Tue Oct 29 2019 14:33:04 GMT+0900 (GMT+09:00)
+⠙ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS TodoDataSource AWS::AppSync::DataSource Tue Oct 29 2019 14:33:07 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS TodoDataSource AWS::AppSync::DataSource Tue Oct 29 2019 14:33:09 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_COMPLETE    TodoDataSource AWS::AppSync::DataSource Tue Oct 29 2019 14:33:09 GMT+0900 (GMT+09:00)
+⠹ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS ListTodoResolver   AWS::AppSync::Resolver Tue Oct 29 2019 14:33:13 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_IN_PROGRESS CreateTodoResolver AWS::AppSync::Resolver Tue Oct 29 2019 14:33:11 GMT+0900 (GMT+09:00)
+CREATE_COMPLETE    CreateTodoResolver AWS::AppSync::Resolver Tue Oct 29 2019 14:33:13 GMT+0900 (GMT+09:00)
+CREATE_COMPLETE    UpdateTodoResolver AWS::AppSync::Resolver Tue Oct 29 2019 14:33:14 GMT+0900 (GMT+09:00)
+CREATE_COMPLETE    ListTodoResolver   AWS::AppSync::Resolver Tue Oct 29 2019 14:33:14 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS GetTodoResolver    AWS::AppSync::Resolver Tue Oct 29 2019 14:33:14 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_IN_PROGRESS UpdateTodoResolver AWS::AppSync::Resolver Tue Oct 29 2019 14:33:14 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_IN_PROGRESS UpdateTodoResolver AWS::AppSync::Resolver Tue Oct 29 2019 14:33:11 GMT+0900 (GMT+09:00)
+CREATE_COMPLETE    GetTodoResolver    AWS::AppSync::Resolver Tue Oct 29 2019 14:33:14 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS CreateTodoResolver AWS::AppSync::Resolver Tue Oct 29 2019 14:33:13 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_IN_PROGRESS DeleteTodoResolver AWS::AppSync::Resolver Tue Oct 29 2019 14:33:12 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS GetTodoResolver    AWS::AppSync::Resolver Tue Oct 29 2019 14:33:12 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS ListTodoResolver   AWS::AppSync::Resolver Tue Oct 29 2019 14:33:12 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS DeleteTodoResolver AWS::AppSync::Resolver Tue Oct 29 2019 14:33:14 GMT+0900 (GMT+09:00) Resource creation Initiated
+CREATE_COMPLETE    DeleteTodoResolver AWS::AppSync::Resolver Tue Oct 29 2019 14:33:14 GMT+0900 (GMT+09:00)
+⠸ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_COMPLETE TodoTable AWS::DynamoDB::Table Tue Oct 29 2019 14:33:23 GMT+0900 (GMT+09:00)
+⠸ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_COMPLETE amplify-amplify-only-staging-141723-apiamplifytest-BGSOYEOED8L4-Todo-WUQYDBFUJ6MK AWS::CloudFormation::Stack Tue Oct 29 2019 14:33:26 GMT+0900 (GMT+09:00)
+⠙ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_COMPLETE Todo AWS::CloudFormation::Stack Tue Oct 29 2019 14:33:33 GMT+0900 (GMT+09:00)
+⠙ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS CustomResourcesjson AWS::CloudFormation::Stack Tue Oct 29 2019 14:33:35 GMT+0900 (GMT+09:00)
+CREATE_IN_PROGRESS CustomResourcesjson AWS::CloudFormation::Stack Tue Oct 29 2019 14:33:36 GMT+0900 (GMT+09:00) Resource creation Initiated
+⠼ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_IN_PROGRESS amplify-amplify-only-staging-141723-apiamplifytest-BGSOYEOED8L4-CustomResourcesjson-FCMOXK15VWSE AWS::CloudFormation::Stack Tue Oct 29 2019 14:33:36 GMT+0900 (GMT+09:00) User Initiated
+CREATE_COMPLETE    amplify-amplify-only-staging-141723-apiamplifytest-BGSOYEOED8L4-CustomResourcesjson-FCMOXK15VWSE AWS::CloudFormation::Stack Tue Oct 29 2019 14:33:39 GMT+0900 (GMT+09:00)
+⠸ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_COMPLETE CustomResourcesjson AWS::CloudFormation::Stack Tue Oct 29 2019 14:33:47 GMT+0900 (GMT+09:00)
+⠸ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_COMPLETE amplify-amplify-only-staging-141723-apiamplifytest-BGSOYEOED8L4 AWS::CloudFormation::Stack Tue Oct 29 2019 14:33:49 GMT+0900 (GMT+09:00)
+⠴ Updating resources in the cloud. This may take a few minutes...
+
+CREATE_COMPLETE apiamplifytest AWS::CloudFormation::Stack Tue Oct 29 2019 14:34:04 GMT+0900 (GMT+09:00)
+⠸ Updating resources in the cloud. This may take a few minutes...
+
+UPDATE_COMPLETE_CLEANUP_IN_PROGRESS amplify-amplify-only-staging-141723 AWS::CloudFormation::Stack Tue Oct 29 2019 14:34:06 GMT+0900 (GMT+09:00)
+UPDATE_COMPLETE                     amplify-amplify-only-staging-141723 AWS::CloudFormation::Stack Tue Oct 29 2019 14:34:07 GMT+0900 (GMT+09:00)
+✔ Generated GraphQL operations successfully and saved at src/graphql
+✔ Code generated successfully and saved in file src/API.ts
+✔ All resources are updated in the cloud
+
+GraphQL endpoint: https://xzbwsnfixbbznhemw62iz5333e.appsync-api.ap-northeast-1.amazonaws.com/graphql
+GraphQL API KEY: da2-5qk6gj********************
